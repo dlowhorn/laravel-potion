@@ -50,7 +50,7 @@ class BladeHelpers
 
         // Version?
         if ($version) {
-            $ret .= "v={$cache[$name]}";
+            $ret .= "?v={$cache[$name]}";
         }
 
         return $ret;
@@ -59,11 +59,11 @@ class BladeHelpers
     /**
      * Asset Css
      * @param $name
-     * @param $rel
      * @param $version
+     * @param $rel
      * @return bool|string
      */
-    public static function assetCss($name, $rel = 'stylesheet', $version = false)
+    public static function assetCss($name, $version = false, $rel = 'stylesheet')
     {
         // Get cache
         $cache = Cache::get('potion_assets', []);
