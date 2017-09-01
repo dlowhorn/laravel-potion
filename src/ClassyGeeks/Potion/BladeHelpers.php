@@ -84,9 +84,10 @@ class BladeHelpers
      * Asset Js
      * @param $name
      * @param $version
+     * @param $defer
      * @return bool|string
      */
-    public static function assetJs($name, $version = false)
+    public static function assetJs($name, $version = false, $defer = FALSE)
     {
         // Get cache
         $cache = Cache::get('potion_assets', []);
@@ -99,8 +100,11 @@ class BladeHelpers
         // Url
         $url = self::assetUrl($name, $version);
 
+	// Deferred ?
+	$def = $defer ? 'defer' : '';
+
         // Return
-        return "<script type=\"text/javascript\" src=\"{$url}\"></script>";
+        return "<script type=\"text/javascript\" src=\"{$url}\" $defer></script>";
     }
 
     /**
