@@ -77,7 +77,7 @@ class BladeHelpers
         $url = self::assetUrl($name, $version);
 
         // Return
-        return "<link href=\"{$url}\" rel=\"{$rel}\" type=\"text/css\" />";
+        return "<link href=\"{$url}\" rel=\"{$rel}\" type=\"text/css\" />\n";
     }
 
     /**
@@ -104,7 +104,7 @@ class BladeHelpers
         $def = $defer ? 'defer' : '';
 
         // Return
-        return "<script type=\"text/javascript\" src=\"{$url}\" $defer></script>";
+        return "<script type=\"text/javascript\" src=\"{$url}\" $defer></script>\n";
     }
 
     /**
@@ -127,6 +127,6 @@ class BladeHelpers
         $url = self::assetUrl($name, $version);
 
         // Return
-        return "<img src=\"{$url}\" />";
+        return "<img src=\"{$url}\" />\n";
     }
 }
