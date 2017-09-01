@@ -101,7 +101,7 @@ class BladeHelpers
         $url = self::assetUrl($name, $version);
 
         // Deferred ?
-        $def = $defer ? 'defer' : '';
+        $defer = $defer ? 'defer' : '';
 
         // Return
         return "<script type=\"text/javascript\" src=\"{$url}\" $defer></script>\n";
