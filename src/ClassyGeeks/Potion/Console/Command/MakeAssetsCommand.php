@@ -67,6 +67,14 @@ class MakeAssetsCommand extends Command
     }
 
     /**
+     * Laravel 5.5+ requires the handle method
+     */
+    public function handle()
+    {
+        $this->fire();
+    }
+
+    /**
      * Execute the console command.
      *
      * @return mixed
