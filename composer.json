@@ -1,59 +1,58 @@
 {
-	"name": "classygeeks/potion",
-	"description": "Potion is a pure PHP asset manager for Laravel based off of Assetic.",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Classy Geeks llc.",
-			"email": "support@classygeeks.com",
-			"homepage": "http://classygeeks.com"
-		}
-	],
-	"keywords": [
-		"assets",
-		"asset-processing",
-		"asset-management",
-		"less",
-		"sass",
-		"scss",
-		"minifying",
-		"minify",
-		"laravel",
-		"compass",
-		"cssmin",
-		"jsmin"
-	],
-	"tags": [
-		"assets",
-		"asset-processing",
-		"asset-management",
-		"less",
-		"sass",
-		"scss",
-		"minifying",
-		"minify",
-		"laravel",
-		"compass",
-		"cssmin",
-		"jsmin"
-
-	],
+    "name": "classygeeks/potion",
+    "description": "Potion is a pure PHP asset manager for Laravel based off of Assetic.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Classy Geeks llc.",
+            "email": "support@classygeeks.com",
+            "homepage": "http://classygeeks.com"
+        }
+    ],
+    "keywords": [
+        "assets",
+        "asset-processing",
+        "asset-management",
+        "less",
+        "sass",
+        "scss",
+        "minifying",
+        "minify",
+        "laravel",
+        "compass",
+        "cssmin",
+        "jsmin"
+    ],
+    "tags": [
+        "assets",
+        "asset-processing",
+        "asset-management",
+        "less",
+        "sass",
+        "scss",
+        "minifying",
+        "minify",
+        "laravel",
+        "compass",
+        "cssmin",
+        "jsmin"
+    ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "5.*",
-	"kriswallsmith/assetic": "1.*",
-	"natxet/CssMin": "3.0.*",
-	"leafo/lessphp": "0.5.*",
-	"leafo/scssphp": "0.6.*",
-	"ptachoire/cssembed": "1.0.*",
-	"linkorb/jsmin-php": "1.0.*"
+        "illuminate/support": "6.*",
+        "kriswallsmith/assetic": "1.*",
+        "natxet/CssMin": "3.0.*",
+        "leafo/lessphp": "0.5.*",
+        "scssphp/scssphp": "1.*",
+        "ptachoire/cssembed": "1.0.*",
+        "linkorb/jsmin-php": "1.0.*"
     },
     "autoload": {
-	    "psr-0": {
+        "psr-0": {
             "ClassyGeeks\\Potion\\": [
-	            "src/"
+                "src/"
             ]
         }
     },
-	"minimum-stability": "dev"
+    "minimum-stability": "dev"
 }
